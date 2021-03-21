@@ -4,35 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel='stylesheet' href='src/icons.css'>
+    <link rel='stylesheet' href='src/styles.css'>
+    <link rel="preconnect"  href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <title>Modus Versus</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>modus</h1>
-            <p>versus</p>
+    <div class="header-layout"></div>
+    <header class="header-wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><h1>modus<p>versus</p></h1></a>
+                
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="home" ><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li class="li-menu"><a href="#"><i class="fas fa-angle-down"></i>portfolio</a>
+                        <ul class="submenu"> 
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Portfolio 2 column page</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Portfolio 2 column page</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right"></i>Portfolio 2 column page</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">contacts</a></li>
+                    <li class="search">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <form class="search-form">
+                            <input type="text" class="search-input" placeholder="Type in text here..." >
+                            <input type="submit" class="search-input__btn" value="Search"> 
+                        </form>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a class="button home" href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#" class="styled_list">portfolio</a>
-                    <ul class="submenu"> 
-                        <li><a href="#" class="styled_list">Portfolio 2 column page</a></li>
-                        <li><a href="#" class="styled_list">Portfolio 2 column page</a></li>
-                        <li><a href="#" class="styled_list">Portfolio 2 column page</a></li>
-                    </ul> 
-                </li>
-                <li><a href="">blog</a></li>
-                <li><a href="">features</a></li>
-                <li><a href="">contacts</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <div class="slider-wrapper">
@@ -67,43 +77,43 @@
             </div>
             <div class="services-columns">
                 <div class="column">
-                    <img src="images/icons/thumbs_up-icon.png">
+                    <i class="far fa-thumbs-up"></i>
                     <div class="title">SUSPENDISSE </div>
                     <p> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. </p>
                     <input class="big_btn" type="submit" value="read more">
                 </div>
                 <div class="column">
-                    <img src="images/icons/key-icon.png">
+                    <i class="fas fa-key"></i>
                     <div class="title">MAECENAS  </div>
                     <p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
                     <input  class="big_btn" type="submit" value="read more">
                 </div>
                 <div class="column">
-                    <img src="images/icons/flag-icon.png">
+                    <i class="fas fa-flag"></i>
                     <div class="title">ALIQUAM </div>
                     <p>Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. </p>
                     <input class="big_btn" type="submit" value="read more">
                 </div>
                 <div class="column">
-                    <img src="images/icons/flask-icon.png">
+                    <i class="fas fa-flask"></i>
                     <div class="title">HABITASSE </div>
                     <p>Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non. </p>
                     <input class="big_btn" type="submit" value="read more">
                 </div>
             </div>
         </div>
-        <div class="why-part-background"></div>
+        
         <div class="why-part">
-            
+            <div class="why-part-background"></div>
             <div class="why-part-top">
                 <h2>WHY MODUS VERSUS?</h2>
                 <p>Capacitance cascading integer reflective interface data development high bus cache dithering transponder.  </p>
             </div>
             <div class="pages-layout">
                 <div class="pages">
-                    <div class="page1"><img src="images/Browser-left.png" alt=""></div>
-                    <div class="page2"><img src="images/Browser_tooenterls_1.png" alt=""></div>
-                    <div class="page3"><img src="images/Browser_right.png" alt=""></div>
+                    <div class="page1"><img src="src/assets/images/Browser-left.png" alt=""></div>
+                    <div class="page2"><img src="src/assets/images/Browser_tooenterls_1.png" alt=""></div>
+                    <div class="page3"><img src="src/assets/images/Browser_right.png" alt=""></div>
                 </div> 
             </div>    
             <div class="why-choose-us_layout">
@@ -156,12 +166,12 @@
                 </div>
                 <div class="happy-slider">
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li><img src="./src/assets/images/jquery.png" alt="jQuery"></li>
+                        <li><img src="./src/assets/images/jquery.png" alt="jQuery"></li>
+                        <li><img src="./src/assets/images/jquery.png" alt="jQuery"></li>
+                        <li><img src="./src/assets/images/jquery.png" alt="jQuery"></li>
+                        <li><img src="./src/assets/images/jquery.png" alt="jQuery"></li>
+                        <li><img src="./src/assets/images/jquery.png" alt="jQuery"></li>
                     </ul>
                 </div>
             </div>
@@ -174,8 +184,7 @@
             <div class="footer-main">
                 <div class="column-side">
                     <div class="title">
-                        <h2>MODUS</h2>
-                        <h5>versus</h5>
+                        <h2>modus<p>versus</p></h2>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
                     <div class="phone-and-mail">
@@ -199,40 +208,47 @@
                     </ul>
                 </div>
                 <div class="column-center">
-                    <div class="title">Community</div>
+                    <div class="title"> Community</div>
                     <ul>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Forum</a></li>
-                        <li><a href="">Support</a></li>
-                        <li><a href="">Newsletter</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Support</a></li> 
+                        <li><a href="#">Newsletter</a></li>
                     </ul>
                 </div>
                 <div class="column-side">
-                    <div class="title">from the BLOG</div>
+                    <div class="title">from the <p>blog</p></div>
                     <div class="blog-layout">
-                        <img src="images/icons/2-layers.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        <div class="date">26 May, 2013</div>
+                        <img src="src/assets/images/icons/2-layers.png" alt="">
+                        <div class="blog-layout-line">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <div class="date">26 May, 2013</div>
+                        </div>
                     </div>
                     <div class="blog-layout">
-                        <img src="images/icons/2-layers.png" alt="">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        <div class="date">26 May, 2013</div>
+                        <img src="src/assets/images/icons/2-layers.png" alt="">
+                        <div class="blog-layout-line">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <div class="date">26 May, 2013</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer-social">
-            <div class="copiright"></div>
-            <div class="social-icons">
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
+            <div class="footer-social-layout">
+                <div class="copiright">2013  ModusVersus </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                        <li><a href="#"><i class="fas fa-rss"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="./src/index.js"></script>
 </body>
 </html>
