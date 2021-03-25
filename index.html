@@ -18,6 +18,9 @@
                 <a href="#"><h1>modus<p>versus</p></h1></a>
                 
             </div>
+            <div class="header-burger">
+                <span></span>
+            </div>
             <nav class="menu">
                 <ul>
                     <li class="home" ><a href="#">home</a></li>
@@ -36,8 +39,10 @@
                     <li class="search">
                         <a href="#"><i class="fas fa-search"></i></a>
                         <form class="search-form">
+                            <input type="submit" class="search-close__btn" value="+"> 
                             <input type="text" class="search-input" placeholder="Type in text here..." >
-                            <input type="submit" class="search-input__btn" value="Search"> 
+                            <input type="submit" class="search-input__btn" value="Search">
+                            
                         </form>
                     </li>
                 </ul>
@@ -66,6 +71,16 @@
             <div class="slider-button left"></div>
             <div class="slider-button right"></div>
             
+        </div>
+        <div class="second-slider">
+            <div class="sslide sslide1"><h2>Vestibulum</h2>
+                <p>Maecenas tincidunt, augue et rutrum condimentum,<br> libero lectus mattis orci, ut commodo.</p></div>
+            <div class="sslide sslide2">
+                <h2>Vestibulum</h2>
+                <p>Maecenas tincidunt, augue et rutrum condimentum,<br> libero lectus mattis orci, ut commodo.</p>
+            </div>
+            <div class="sslide sslide3"><h2>Vestibulum</h2>
+                <p>Maecenas tincidunt, augue et rutrum condimentum,<br> libero lectus mattis orci, ut commodo.</p></div>
         </div>
         <div class="our-services">
             <div class="description">
@@ -249,6 +264,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./node_modules/slick-slider/slick/slick.min.js"></script>
     <script src="./src/index.js"></script>
 </body>
 </html>
