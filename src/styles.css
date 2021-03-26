@@ -3,6 +3,9 @@
   margin: 0;
   outline: none; }
 
+html, body {
+  overflow-x: hidden; }
+
 body {
   background-color: #f3f3f3;
   z-index: -5; }
@@ -217,12 +220,15 @@ h1 {
 @media (max-width: 800px) {
   body.lock {
     overflow: hidden; }
+  main {
+    padding-top: 50px; }
   .header-burger {
     display: block;
     position: relative;
     width: 30px;
     height: 20px;
-    z-index: 20; }
+    z-index: 20;
+    margin-right: 10px; }
   .header-burger span {
     position: absolute;
     background-color: #fff;
@@ -256,10 +262,11 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
+    max-width: 800px;
     width: 100%;
     height: 100%;
     background-color: aqua;
-    z-index: 10;
+    z-index: -1;
     padding: 50px 0px 0px 0px;
     top: -100%;
     transition: all 0.3s ease 0s;
@@ -278,21 +285,32 @@ h1 {
   .header-wrapper .header .menu.active {
     top: 0; }
   .header-wrapper {
-    height: 50px; }
+    height: 50px;
+    position: fixed;
+    z-index: 200;
+    max-width: 800px;
+    width: 100%; }
     .header-wrapper .logo {
-      z-index: 30; }
+      z-index: 30;
+      margin-left: 10px; }
     .header-wrapper .header {
       height: inherit;
-      padding: 0px 5px 0px 5px; }
+      background: url(assets/images/Path_mini_header.png) repeat-x #76c7c0 0 100%; }
   .header-layout {
-    height: 50px;
-    z-index: 20;
-    width: 100%; }
+    display: none; }
   .menu .search {
     position: relative; }
   .menu .search-form {
     top: 40px;
-    left: 120px; } }
+    left: 120px; }
+  .why-choose-us {
+    margin-left: 10px; }
+  .why-reviews {
+    margin-right: 10px; }
+  .footer-social .footer-social-layout .copiright {
+    margin-left: 10px; }
+  .footer-social .footer-social-layout .social-icons {
+    margin-right: 10px; } }
 
 /* --------------------- Main part --------------------- */
 /* --------------- Slider --------------- */
@@ -909,6 +927,13 @@ h1 {
   justify-content: center;
   align-items: center; }
 
+@media (max-width: 800px) {
+  .slider-nav .btns .right-btn {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .happy-clients_layout .title {
+    margin-left: 10px; } }
+
 /* --------------------- FOOTER---------------------- */
 footer {
   width: 100%; }
@@ -1145,7 +1170,8 @@ footer {
   body {
     width: 100%; }
   .footer-main {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-around; }
     .footer-main .column-side:nth-child(1) {
       margin-left: 10px;
       order: 1;
