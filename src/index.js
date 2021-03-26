@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
         arrows:true,
         dots: true,
         initialSlide:1,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:4000,
-        infinite:false,
+        infinite:true,
         speed:1500,
         easing:'ease'
       });
